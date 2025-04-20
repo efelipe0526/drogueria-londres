@@ -1,0 +1,125 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Paleta de Colores (Sección 1, Punto 4):
+   - Primario: #007bff (Azul) - Botones y sidebar
+   - Secundario: #f8f9fa (Gris claro) - Fondo
+   - Advertencia: #fff3cd (Amarillo claro) - Próximo a vencer
+   - Alerta: #f8d7da (Rojo claro) - Vencido
+   - Éxito: #28a745 (Verde) - Acciones exitosas
+   Cumple con WCAG 2.1 (contraste mínimo 4.5:1) */
+
+.login-container, .register-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3f95eb;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.sidebar {
+    min-height: 100vh;
+    background-color: #007bff;
+    color: white;
+    padding-top: 20px;
+}
+
+.sidebar .nav-link {
+    color: white;
+    font-weight: 500;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #0056b3;
+    border-radius: 5px;
+}
+
+/* Corrección: Navegación por teclado */
+.nav-link:focus, .btn:focus {
+    outline: 2px solid #0056b3;
+    outline-offset: 2px;
+}
+
+.header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.btn-custom {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-custom:hover {
+    background-color: #0056b3;
+}
+
+.btn-logout {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-logout:hover {
+    background-color: #c82333;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.table-expiry-soon {
+    background-color: #fff3cd;
+}
+
+.table-expired {
+    background-color: #f8d7da;
+}
+
+#mainApp {
+    display: none;
+    height: 100vh;
+    overflow: auto;
+}
+
+.add-product-form, .add-payment-form {
+    display: none;
+    margin-top: 20px;
+}
+
+.dashboard-card {
+    margin-bottom: 20px;
+}
+
+/* Corrección: Clase para elementos ocultos visualmente (accesibilidad) */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}

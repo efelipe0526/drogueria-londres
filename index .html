@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Droguería Londres - Sistema de Ventas</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Fuentes personalizadas (Google Fonts) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Pantalla de Inicio de Sesión -->
+    <div class="login-container" id="login">
+        <div class="card p-4" style="width: 400px;">
+            <img src="imagen/logo.jpg" alt="Logotipo Droguería Londres" class="logo mx-auto d-block">
+            <h3 class="text-center mb-4" id="login-title">Droguería Londres</h3>
+            <!-- Corrección: Atributos ARIA para accesibilidad -->
+            <form id="loginForm" aria-labelledby="login-title">
+                <h3 id="form-title" class="visually-hidden">Inicio de Sesión</h3>
+                <div class="mb-3">
+                    <label for="username" class="form-label">Usuario</label>
+                    <input type="text" class="form-control" id="username" placeholder="Ej. José" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="password" placeholder="********" required>
+                </div>
+                <button type="submit" class="btn btn-custom w-100">Iniciar Sesión</button>
+            </form>
+            <p class="text-center mt-3"><a href="#" id="showRegister">Registrar</a></p>
+        </div>
+    </div>
+
+    <!-- Pantalla de Registro -->
+    <div class="register-container" id="register" style="display: none;">
+        <div class="card p-4" style="width: 400px;">
+            <h3 class="text-center mb-4" id="register-title">Registro de Usuario</h3>
+            <!-- Corrección: Atributos ARIA para accesibilidad -->
+            <form id="registerForm" aria-labelledby="register-title">
+                <h3 id="reg-form-title" class="visually-hidden">Formulario de Registro</h3>
+                <div class="mb-3">
+                    <label for="regName" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="regName" placeholder="Nombre completo" required>
+                </div>
+                <div class="mb-3">
+                    <label for="regEmail" class="form-label">Correo</label>
+                    <input type="email" class="form-control" id="regEmail" placeholder="correo@ejemplo.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="regPassword" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="regPassword" placeholder="********" required>
+                </div>
+                <div class="mb-3">
+                    <label for="regRole" class="form-label">Rol</label>
+                    <select class="form-select" id="regRole" required>
+                        <option value="" disabled selected>Selecciona un rol</option>
+                        <option value="Administrador">Administrador</option>
+                        <option value="Vendedor">Vendedor</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-success w-100">Guardar</button>
+                <button type="button" class="btn btn-secondary w-100 mt-2" id="backToLogin">Volver al Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Contenedor Principal (Oculto hasta Login) -->
+    <div class="d-flex" id="mainApp" style="display: none;">
+        <!-- Menú Lateral -->
+        <!-- Corrección: Atributos ARIA para accesibilidad del mapa de navegación -->
+        <div class="sidebar col-md-2" id="sidebar" role="navigation" aria-label="Menú principal">
+            <h4 class="text-center mb-4">Droguería Londres</h4>
+            <ul class="nav flex-column" id="navMenu"></ul>
+        </div>
+
+        <!-- Contenido Principal -->
+        <div class="col-md-10">
+            <!-- Encabezado -->
+            <div class="header d-flex justify-content-between align-items-center">
+                <h2>Bienvenido a Droguería Londres</h2>
+                <div>
+                    <input type="text" class="form-control d-inline-block w-auto" placeholder="Buscar producto..." aria-label="Búsqueda rápida">
+                    <!-- Corrección: aria-label para accesibilidad -->
+                    <button class="btn btn-custom ms-2" aria-label="Buscar producto">Buscar</button>
+                </div>
+            </div>
+
+            <!-- Contenido Dinámico -->
+            <div class="content">
+                <!-- Sección Inicio -->
+                <div id="inicio" class="mb-5">
+                    <h3>Dashboard</h3>
+                    <div class="row">
+                        <div class="col-md-4 dashboard-card">
+                            <div class="card p-3">
+                                <h5>Ventas del Día</h5>
+                                <p class="display-6">$120,000</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 dashboard-card">
+                            <div class="card p-3">
+                                <h5>Productos en Stock</h5>
+                                <p class="display-6">850</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 dashboard-card">
+                            <div class="card p-3">
+                                <h5>Alertas de Stock Bajo</h5>
+                                <p class="display-6">3</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 dashboard-card">
+                            <div class="card p-3">
+                                <h5>Productos Más Vendidos</h5>
+                                <table class="table table-sm">
+                                    <tbody>
+                                        <tr><td>Paracetamol 500mg</td><td>150</td></tr>
+                                        <tr><td>Crema Hidratante</td><td>80</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-md-4 dashboard-card">
+                            <div class="card p-3">
+                                <h5>Ventas por Mes</h5>
+                                <table class="table table-sm">
+                                    <tbody>
+                                        <tr><td>Enero 2025</td><td>$200,000</td></tr>
+                                        <tr><td>Febrero 2025</td><td>$120,000</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-md-4 dashboard-card">
+                            <div class="card p-3">
+                                <h5>Acumulado</h5>
+                                <p class="display-6">$320,000</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 dashboard-card">
+                            <div class="card p-3">
+                                <h5>Fechas de Vencimiento de Medicamentos</h5>
+                                <table class="table table-sm">
+                                    <thead>
+                                        <tr>
+                                            <th>Producto</th>
+                                            <th>Fecha de Vencimiento</th>
+                                            <th>Estado</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="table-expiry-soon">
+                                            <td>Paracetamol 500mg</td>
+                                            <td>2025-03-15</td>
+                                            <td>Próximo a vencer</td>
+                                        </tr>
+                                        <tr class="table-expired">
+                                            <td>Ibuprofeno 200mg</td>
+                                            <td>2024-12-01</td>
+                                            <td>Vencido</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Crema Hidratante</td>
+                                            <td>2025-12-31</td>
+                                            <td>Vigente</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-md-12 dashboard-card">
+                            <button class="btn btn-success mt-3" id="exportDashboardExcel">Exportar a Excel</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sección Productos (Actualizada con Editar y Eliminar) -->
+                <div id="productos" class="mb-5 d-none">
+                    <h3>Productos</h3>
+                    <button class="btn btn-success mb-3" id="addProductBtn" aria-label="Agregar nuevo producto">Agregar</button>
+                    <div class="add-product-form" id="addProductForm">
+                        <form id="productForm">
+                            <div class="mb-3">
+                                <label for="productCode" class="form-label">Código</label>
+                                <input type="text" class="form-control" id="productCode" placeholder="Ej. 004" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="productName" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="productName" placeholder="Nombre del producto" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="productCategory" class="form-label">Categoría</label>
+                                <select class="form-select" id="productCategory" required>
+                                    <option value="" disabled selected>Selecciona una categoría</option>
+                                    <option value="medicamentos">Medicamentos</option>
+                                    <option value="cosmeticos">Cosméticos</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="productStock" class="form-label">Stock</label>
+                                <input type="number" class="form-control" id="productStock" min="1" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="productPrice" class="form-label">Precio ($)</label>
+                                <input type="number" class="form-control" id="productPrice" min="0" step="0.01" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Guardar</button>
+                            <button type="button" class="btn btn-secondary ms-2" id="cancelAddProduct">Cancelar</button>
+                        </form>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <select class="form-select mb-3">
+                                <option selected>Categoría</option>
+                                <option>Medicamentos</option>
+                                <option>Cosméticos</option>
+                            </select>
+                        </div>
+                        <div class="col-md-12">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Código</th>
+                                        <th>Nombre</th>
+                                        <th>Categoría</th>
+                                        <th>Stock</th>
+                                        <th>Precio ($)</th>
+                                        <th>Acción</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>001</td>
+                                        <td>Paracetamol 500mg</td>
+                                        <td>Medicamentos</td>
+                                        <td>50</td>
+                                        <td>500.00</td>
+                                        <td>
+                                            <button class="btn btn-warning btn-sm me-1">Editar</button>
+                                            <button class="btn btn-danger btn-sm">Eliminar</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>002</td>
+                                        <td>Crema Hidratante</td>
+                                        <td>Cosméticos</td>
+                                        <td>20</td>
+                                        <td>500.00</td>
+                                        <td>
+                                            <button class="btn btn-warning btn-sm me-1">Editar</button>
+                                            <button class="btn btn-danger btn-sm">Eliminar</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sección Ventas -->
+                <!-- Beneficio 1: Agiliza la venta de productos por unidad o caja -->
+                <div id="ventas" class="mb-5 d-none">
+                    <h3>Registrar Venta</h3>
+                    <form>
+                        <div class="mb-3">
+                            <label for="barcode" class="form-label">Código de Barras</label>
+                            <input type="text" class="form-control" id="barcode" placeholder="Escanea o ingresa código">
+                        </div>
+                        <div class="mb-3">
+                            <label for="producto" class="form-label">Producto</label>
+                            <input type="text" class="form-control" id="producto" placeholder="Nombre o código">
+                        </div>
+                        <div class="mb-3">
+                            <label for="cantidad" class="form-label">Cantidad</label>
+                            <input type="number" class="form-control" id="cantidad" min="1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="paymentMethodSale" class="form-label">Forma de Pago</label>
+                            <select class="form-select" id="paymentMethodSale">
+                                <option value="" disabled selected>Selecciona una forma de pago</option>
+                                <option value="efectivo">Efectivo</option>
+                                <option value="nequi">Nequi</option>
+                                <option value="cuentaAhorros">Cuenta de Ahorros</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <button type="button" class="btn btn-custom me-2">Venta por Unidad</button>
+                            <button type="button" class="btn btn-custom">Venta por Caja</button>
+                        </div>
+                        <button type="submit" class="btn btn-success">Generar Factura</button>
+                    </form>
+                </div>
+
+                <!-- Sección Inventario -->
+                <!-- Beneficio 2: Facilita el control de stock y fechas de vencimiento -->
+                <div id="inventario" class="mb-5 d-none">
+                    <h3>Inventario</h3>
+                    <div class="row mb-3">
+                        <div class="col-md-3">
+                            <select class="form-select" id="categoryFilter">
+                                <option selected>Todas las Categorías</option>
+                                <option>Medicamentos</option>
+                                <option>Cosméticos</option>
+                            </select>
+                        </div>
+                    </div>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Código</th>
+                                <th>Nombre</th>
+                                <th>Categoría</th>
+                                <th>Stock</th>
+                                <th>Fecha de Vencimiento</th>
+                                <th>Acción</th>
+                            </tr>
+                        </thead>
+                        <tbody id="inventoryTable">
+                            <tr>
+                                <td>001</td>
+                                <td>Paracetamol 500mg</td>
+                                <td>Medicamentos</td>
+                                <td>50</td>
+                                <td>2025-12-31</td>
+                                <td>
+                                    <button class="btn btn-warning btn-sm me-1">Editar</button>
+                                    <button class="btn btn-danger btn-sm">Eliminar</button>
+                                </td>
+                            </tr>
+                            <tr class="table-expiry-soon">
+                                <td>002</td>
+                                <td>Ibuprofeno 200mg</td>
+                                <td>Medicamentos</td>
+                                <td>10</td>
+                                <td>2025-03-15</td>
+                                <td>
+                                    <button class="btn btn-warning btn-sm me-1">Editar</button>
+                                    <button class="btn btn-danger btn-sm">Eliminar</button>
+                                </td>
+                            </tr>
+                            <tr class="table-expired">
+                                <td>003</td>
+                                <td>Crema Antiedad</td>
+                                <td>Cosméticos</td>
+                                <td>5</td>
+                                <td>2024-12-01</td>
+                                <td>
+                                    <button class="btn btn-warning btn-sm me-1">Editar</button>
+                                    <button class="btn btn-danger btn-sm">Eliminar</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Sección Contabilidad -->
+                <div id="contabilidad" class="mb-5 d-none">
+                    <h3>Contabilidad</h3>
+                    <ul class="nav nav-tabs mb-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#impuestos" data-bs-toggle="tab">Impuestos DIAN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ingresos" data-bs-toggle="tab">Ingresos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#egresos" data-bs-toggle="tab">Egresos</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="impuestos">
+                            <h5>Impuestos DIAN</h5>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Fecha</th>
+                                        <th>Concepto</th>
+                                        <th>Valor</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2025-02-20</td>
+                                        <td>IVA Ventas</td>
+                                        <td>$24,000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <button class="btn btn-success mt-3" id="exportImpuestosExcel">Exportar a Excel</button>
+                        </div>
+                        <div class="tab-pane fade" id="ingresos">
+                            <h5>Ingresos</h5>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Fecha</th>
+                                        <th>Descripción</th>
+                                        <th>Valor</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2025-02-20</td>
+                                        <td>Venta Diaria</td>
+                                        <td>$120,000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <button class="btn btn-success mt-3" id="exportIngresosExcel">Exportar a Excel</button>
+                        </div>
+                        <div class="tab-pane fade" id="egresos">
+                            <h5>Egresos</h5>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Fecha</th>
+                                        <th>Descripción</th>
+                                        <th>Valor</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2025-02-20</td>
+                                        <td>Compra Proveedor</td>
+                                        <td>$50,000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <button class="btn btn-success mt-3" id="exportEgresosExcel">Exportar a Excel</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sección Proveedores -->
+                <!-- Beneficio 3: Optimiza la gestión de proveedores -->
+                <div id="proveedores" class="mb-5 d-none">
+                    <h3>Proveedores</h3>
+                    <button class="btn btn-success mb-3" id="addProviderBtn" aria-label="Agregar nuevo proveedor">Agregar</button>
+                    <div class="add-provider-form" id="addProviderForm">
+                        <form id="providerForm">
+                            <div class="mb-3">
+                                <label for="providerId" class="form-label">ID</label>
+                                <input type="text" class="form-control" id="providerId" placeholder="Ej. 003" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="providerName" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="providerName" placeholder="Nombre del proveedor" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="providerContact" class="form-label">Contacto</label>
+                                <input type="text" class="form-control" id="providerContact" placeholder="Ej. 300-123-4567" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Guardar</button>
+                            <button type="button" class="btn btn-secondary ms-2" id="cancelAddProvider">Cancelar</button>
+                        </form>
+                    </div>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nombre</th>
+                                <th>Contacto</th>
+                                <th>Acción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>001</td>
+                                <td>Distribuidora Salud</td>
+                                <td>300-123-4567</td>
+                                <td>
+                                    <button class="btn btn-warning btn-sm me-1">Editar</button>
+                                    <button class="btn btn-danger btn-sm">Eliminar</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>002</td>
+                                <td>Cosmética SAS</td>
+                                <td>310-987-6543</td>
+                                <td>
+                                    <button class="btn btn-warning btn-sm me-1">Editar</button>
+                                    <button class="btn btn-danger btn-sm">Eliminar</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Sección Compras -->
+                <div id="compras" class="mb-5 d-none">
+                    <h3>Registrar Compra</h3>
+                    <form>
+                        <div class="mb-3">
+                            <label for="proveedor" class="form-label">Proveedor</label>
+                            <select class="form-select" id="proveedor">
+                                <option selected>Selecciona un proveedor</option>
+                                <option>Distribuidora Salud</option>
+                                <option>Cosmética SAS</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="productoCompra" class="form-label">Producto</label>
+                            <input type="text" class="form-control" id="productoCompra" placeholder="Nombre o código">
+                        </div>
+                        <div class="mb-3">
+                            <label for="cantidadCompra" class="form-label">Cantidad</label>
+                            <input type="number" class="form-control" id="cantidadCompra" min="1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="fechaVencimiento" class="form-label">Fecha de Vencimiento</label>
+                            <input type="date" class="form-control" id="fechaVencimiento">
+                        </div>
+                        <button type="submit" class="btn btn-success">Registrar Compra</button>
+                    </form>
+                </div>
+
+                <!-- Sección Configuración -->
+                <div id="configuracion" class="mb-5 d-none">
+                    <h3>Configuración</h3>
+                    <p>Ajustes del sistema y preferencias de usuario.</p>
+                    <h4 class="mt-4">Configuración de Facturación</h4>
+                    <form id="invoiceConfigForm">
+                        <div class="mb-3">
+                            <label for="invoiceStartNumber" class="form-label">Número de Inicio de Factura</label>
+                            <input type="number" class="form-control" id="invoiceStartNumber" placeholder="Ej. 1000" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Guardar</button>
+                    </form>
+                </div>
+
+                <!-- Sección Formas de Pago -->
+                <div id="formasDePago" class="mb-5 d-none">
+                    <h3>Formas de Pago</h3>
+                    <button class="btn btn-success mb-3" id="addPaymentBtn" aria-label="Agregar nueva forma de pago">Agregar Forma de Pago</button>
+                    <div class="add-payment-form" id="addPaymentForm">
+                        <form id="paymentForm">
+                            <div class="mb-3">
+                                <label for="paymentMethod" class="form-label">Forma de Pago</label>
+                                <select class="form-select" id="paymentMethod" required>
+                                    <option value="" disabled selected>Selecciona una forma de pago</option>
+                                    <option value="efectivo">Efectivo</option>
+                                    <option value="cuentaAhorros">Cuenta de Ahorros</option>
+                                </select>
+                            </div>
+                            <div class="mb-3" id="bankFields" style="display: none;">
+                                <label for="bankName" class="form-label">Banco</label>
+                                <input type="text" class="form-control" id="bankName" placeholder="Ej. Bancolombia">
+                                <label for="bankAccount" class="form-label mt-2">Número de Cuenta</label>
+                                <input type="text" class="form-control" id="bankAccount" placeholder="Ej. 1234567890">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Guardar</button>
+                            <button type="button" class="btn btn-secondary ms-2" id="cancelAddPayment">Cancelar</button>
+                        </form>
+                    </div>
+                    <table class="table table-striped" id="paymentTable">
+                        <thead>
+                            <tr>
+                                <th>Forma de Pago</th>
+                                <th>Detalles</th>
+                                <th>Acción</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+
+                <!-- Sección Copia de Seguridad -->
+                <div id="copiaSeguridad" class="mb-5 d-none">
+                    <h3>Copia de Seguridad</h3>
+                    <p>Realice una copia de seguridad diaria de la base de datos.</p>
+                    <button class="btn btn-success mb-3" id="backupBtn">Copia de Seguridad</button>
+                </div>
+
+                <!-- Sección Clientes (Corregida) -->
+                <div id="clientes" class="mb-5 d-none">
+                    <h3>Clientes</h3>
+                    <button class="btn btn-success mb-3" id="addClientBtn" aria-label="Agregar nuevo cliente">Agregar Cliente</button>
+                    <div class="add-client-form" id="addClientForm" style="display: none;">
+                        <form id="clientForm">
+                            <div class="mb-3">
+                                <label for="clientName" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="clientName" placeholder="Ej. Juan Pérez" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="clientAddress" class="form-label">Dirección</label>
+                                <input type="text" class="form-control" id="clientAddress" placeholder="Ej. Calle 123 #45-67" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="clientId" class="form-label">Cédula o NIT</label>
+                                <input type="text" class="form-control" id="clientId" placeholder="Ej. 12345678-9" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="clientPhone" class="form-label">Teléfono</label>
+                                <input type="tel" class="form-control" id="clientPhone" placeholder="Ej. 300-123-4567" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Guardar</button>
+                            <button type="button" class="btn btn-secondary ms-2" id="cancelAddClient">Cancelar</button>
+                        </form>
+                    </div>
+                    <table class="table table-striped" id="clientTable">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Dirección</th>
+                                <th>Cédula o NIT</th>
+                                <th>Teléfono</th>
+                                <th>Acción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Juan Pérez</td>
+                                <td>Calle 123 #45-67</td>
+                                <td>12345678-9</td>
+                                <td>300-123-4567</td>
+                                <td>
+                                    <button class="btn btn-warning btn-sm me-1">Editar</button>
+                                    <button class="btn btn-danger btn-sm">Eliminar</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div><!-- Fin del content -->
+        </div><!-- Fin del col-md-10 -->
+    </div><!-- Fin del mainApp -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script personalizado -->
+    <script src="script.js"></script>
+</body>
+</html>
