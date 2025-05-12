@@ -1,0 +1,890 @@
+[08-May-2025 23:08:46 Europe/Berlin] Venta: numero_factura=0000011, subtotal=4500, impuesto=0, total_con_impuesto=4500, cliente_id=2, forma_pago=6, banco=, cuenta=NULL, monto_efectivo=0, monto_otra_forma_pago=0
+[08-May-2025 23:08:46 Europe/Berlin] POST total: 4500, Calculated total_con_impuesto: 4500
+[08-May-2025 23:08:46 Europe/Berlin] POST data: Array
+(
+    [cliente_id] => 2
+    [numero_factura] => 0000011
+    [subtotal] => 4500.00
+    [impuesto] => 8.00
+    [total] => 4500.00
+    [categoria_id] => 35
+    [producto] => 
+    [laboratorio] => 
+    [cantidad] => 1
+    [unidad] => 
+    [precio_por_unidad] => 
+    [precio_unitario] => 
+    [usar_precio_venta] => on
+    [forma_pago] => 6
+    [banco] => 
+    [cuenta] => 
+    [monto_efectivo] => 0
+    [monto_otra_forma_pago] => 0
+    [monto_pagado] => 4500
+    [vuelto] => 0.00
+    [productos] => [{"id":"244","laboratorio_id":"2","nombre":"LOSARTAN 50 mg","cantidad":3,"unidad":"3","precio_por_unidad":1500,"precio_venta":"","subtotal":4500,"usar_precio_venta":false,"usar_unidad":true}]
+    [aplicar_impuesto] => 0
+    [dividir_pago] => 0
+)
+
+[08-May-2025 23:08:46 Europe/Berlin] Table 'marci.detalles_venta' doesn't exist
+[08-May-2025 23:09:41 Europe/Berlin] Venta: numero_factura=0000011, subtotal=4500, impuesto=0, total_con_impuesto=4500, cliente_id=2, forma_pago=6, banco=, cuenta=NULL, monto_efectivo=0, monto_otra_forma_pago=0
+[08-May-2025 23:09:41 Europe/Berlin] POST total: 4500, Calculated total_con_impuesto: 4500
+[08-May-2025 23:09:41 Europe/Berlin] POST data: Array
+(
+    [cliente_id] => 2
+    [numero_factura] => 0000011
+    [subtotal] => 4500.00
+    [impuesto] => 8.00
+    [total] => 4500.00
+    [categoria_id] => 35
+    [producto] => 
+    [laboratorio] => 
+    [cantidad] => 1
+    [unidad] => 
+    [precio_por_unidad] => 
+    [precio_unitario] => 
+    [usar_precio_venta] => on
+    [forma_pago] => 6
+    [banco] => 
+    [cuenta] => 
+    [monto_efectivo] => 0
+    [monto_otra_forma_pago] => 0
+    [monto_pagado] => 4500
+    [vuelto] => 0.00
+    [productos] => [{"id":"244","laboratorio_id":"2","nombre":"LOSARTAN 50 mg","cantidad":3,"unidad":"3","precio_por_unidad":1500,"precio_venta":"","subtotal":4500,"usar_precio_venta":false,"usar_unidad":true}]
+    [aplicar_impuesto] => 0
+    [dividir_pago] => 0
+)
+
+[08-May-2025 23:09:41 Europe/Berlin] Table 'marci.detalles_venta' doesn't exist
+[08-May-2025 23:17:08 Europe/Berlin] Venta: numero_factura=0000011, subtotal=4500, impuesto=0, total_con_impuesto=4500, cliente_id=2, forma_pago=6, banco=, cuenta=NULL, monto_efectivo=0, monto_otra_forma_pago=0
+[08-May-2025 23:17:08 Europe/Berlin] POST total: 4500, Calculated total_con_impuesto: 4500
+[08-May-2025 23:17:08 Europe/Berlin] POST data: Array
+(
+    [cliente_id] => 2
+    [numero_factura] => 0000011
+    [subtotal] => 4500.00
+    [impuesto] => 8.00
+    [total] => 4500.00
+    [categoria_id] => 35
+    [producto] => 
+    [laboratorio] => 
+    [cantidad] => 1
+    [unidad] => 
+    [precio_por_unidad] => 
+    [precio_unitario] => 
+    [usar_precio_venta] => on
+    [forma_pago] => 6
+    [banco] => 
+    [cuenta] => 
+    [monto_efectivo] => 0
+    [monto_otra_forma_pago] => 0
+    [monto_pagado] => 4500
+    [vuelto] => 0.00
+    [productos] => [{"id":"244","laboratorio_id":"2","nombre":"LOSARTAN 50 mg","cantidad":3,"unidad":"3","precio_por_unidad":1500,"precio_venta":"","subtotal":4500,"usar_precio_venta":false,"usar_unidad":true}]
+    [aplicar_impuesto] => 0
+    [dividir_pago] => 0
+)
+
+[08-May-2025 23:17:08 Europe/Berlin] Detalle: venta_id=137, producto_id=244, cantidad=3, unidad='3', precio_unitario=1500, precio_venta=0, usar_unidad=true
+[08-May-2025 23:17:08 Europe/Berlin] Procesando actualización de unidad para producto_id=244, laboratorio_id=2
+[08-May-2025 23:17:08 Europe/Berlin] Datos actuales: unidad_actual=5, unidad_original=15, stock_actual=1
+[08-May-2025 23:17:08 Europe/Berlin] Después de cálculo: nueva_unidad=2, nuevo_stock=1
+[08-May-2025 23:17:08 Europe/Berlin] Actualización exitosa: producto_id=244, laboratorio_id=2, nueva_unidad=2, nuevo_stock=1
+[08-May-2025 23:17:08 Europe/Berlin] Reportes bind_param: type_string=iisddddidsdd, params_count=12, venta_id=137, cliente_id=2, numero_factura=0000011, total=4500, impuesto=0, total_con_impuesto=4500, forma_pago=6, subtotal=4500, banco=, cuenta=NULL, monto_efectivo=0, monto_otra_forma_pago=0
+[08-May-2025 23:18:54 Europe/Berlin] Venta: numero_factura=0000012, subtotal=5000, impuesto=0, total_con_impuesto=5000, cliente_id=3, forma_pago=6, banco=, cuenta=NULL, monto_efectivo=0, monto_otra_forma_pago=0
+[08-May-2025 23:18:54 Europe/Berlin] POST total: 5000, Calculated total_con_impuesto: 5000
+[08-May-2025 23:18:54 Europe/Berlin] POST data: Array
+(
+    [cliente_id] => 3
+    [numero_factura] => 0000012
+    [subtotal] => 5000.00
+    [impuesto] => 8.00
+    [total] => 5000.00
+    [categoria_id] => 35
+    [producto] => 
+    [laboratorio] => 
+    [cantidad] => 1
+    [unidad] => 
+    [precio_por_unidad] => 
+    [precio_unitario] => 
+    [usar_precio_venta] => on
+    [forma_pago] => 6
+    [banco] => 
+    [cuenta] => 
+    [monto_efectivo] => 0
+    [monto_otra_forma_pago] => 0
+    [monto_pagado] => 5000
+    [vuelto] => 0.00
+    [productos] => [{"id":"245","laboratorio_id":"1","nombre":"LORATADINA 30 mg","cantidad":5,"unidad":"5","precio_por_unidad":1000,"precio_venta":"","subtotal":5000,"usar_precio_venta":false,"usar_unidad":true}]
+    [aplicar_impuesto] => 0
+    [dividir_pago] => 0
+)
+
+[08-May-2025 23:18:54 Europe/Berlin] Detalle: venta_id=138, producto_id=245, cantidad=5, unidad='5', precio_unitario=1000, precio_venta=0, usar_unidad=true
+[08-May-2025 23:18:54 Europe/Berlin] Procesando actualización de unidad para producto_id=245, laboratorio_id=1
+[08-May-2025 23:18:54 Europe/Berlin] Datos actuales: unidad_actual=10, unidad_original=20, stock_actual=1
+[08-May-2025 23:18:54 Europe/Berlin] Después de cálculo: nueva_unidad=5, nuevo_stock=1
+[08-May-2025 23:18:54 Europe/Berlin] Actualización exitosa: producto_id=245, laboratorio_id=1, nueva_unidad=5, nuevo_stock=1
+[08-May-2025 23:18:54 Europe/Berlin] Reportes bind_param: type_string=iisddddidsdd, params_count=12, venta_id=138, cliente_id=3, numero_factura=0000012, total=5000, impuesto=0, total_con_impuesto=5000, forma_pago=6, subtotal=5000, banco=, cuenta=NULL, monto_efectivo=0, monto_otra_forma_pago=0
+[08-May-2025 23:21:23 Europe/Berlin] Venta: numero_factura=0000013, subtotal=5000, impuesto=0, total_con_impuesto=5000, cliente_id=3, forma_pago=6, banco=, cuenta=NULL, monto_efectivo=0, monto_otra_forma_pago=0
+[08-May-2025 23:21:23 Europe/Berlin] POST total: 5000, Calculated total_con_impuesto: 5000
+[08-May-2025 23:21:23 Europe/Berlin] POST data: Array
+(
+    [cliente_id] => 3
+    [numero_factura] => 0000013
+    [subtotal] => 5000.00
+    [impuesto] => 8.00
+    [total] => 5000.00
+    [categoria_id] => 35
+    [producto] => 
+    [laboratorio] => 
+    [cantidad] => 1
+    [unidad] => 
+    [precio_por_unidad] => 
+    [precio_unitario] => 
+    [usar_precio_venta] => on
+    [forma_pago] => 6
+    [banco] => 
+    [cuenta] => 
+    [monto_efectivo] => 0
+    [monto_otra_forma_pago] => 0
+    [monto_pagado] => 5000
+    [vuelto] => 0.00
+    [productos] => [{"id":"245","laboratorio_id":"1","nombre":"LORATADINA 30 mg","cantidad":5,"unidad":"5","precio_por_unidad":1000,"precio_venta":"","subtotal":5000,"usar_precio_venta":false,"usar_unidad":true}]
+    [aplicar_impuesto] => 0
+    [dividir_pago] => 0
+)
+
+[08-May-2025 23:21:23 Europe/Berlin] Detalle: venta_id=139, producto_id=245, cantidad=5, unidad='5', precio_unitario=1000, precio_venta=0, usar_unidad=true
+[08-May-2025 23:21:23 Europe/Berlin] Procesando actualización de unidad para producto_id=245, laboratorio_id=1
+[08-May-2025 23:21:23 Europe/Berlin] Datos actuales: unidad_actual=5, unidad_original=20, stock_actual=1
+[08-May-2025 23:21:23 Europe/Berlin] Después de cálculo: nueva_unidad=20, nuevo_stock=0
+[08-May-2025 23:21:23 Europe/Berlin] Actualización exitosa: producto_id=245, laboratorio_id=1, nueva_unidad=20, nuevo_stock=0
+[08-May-2025 23:21:23 Europe/Berlin] Reportes bind_param: type_string=iisddddidsdd, params_count=12, venta_id=139, cliente_id=3, numero_factura=0000013, total=5000, impuesto=0, total_con_impuesto=5000, forma_pago=6, subtotal=5000, banco=, cuenta=NULL, monto_efectivo=0, monto_otra_forma_pago=0
+[09-May-2025 00:27:37 Europe/Berlin] Venta: numero_factura=0000015, subtotal=10000, impuesto=0, total_con_impuesto=10000, cliente_id=2, forma_pago=6, banco=, cuenta=NULL, monto_efectivo=0, monto_otra_forma_pago=0
+[09-May-2025 00:27:37 Europe/Berlin] POST total: 10000, Calculated total_con_impuesto: 10000
+[09-May-2025 00:27:37 Europe/Berlin] POST data: Array
+(
+    [cliente_id] => 2
+    [numero_factura] => 0000015
+    [subtotal] => 10000.00
+    [impuesto] => 8.00
+    [total] => 10000.00
+    [categoria_id] => 35
+    [producto] => 
+    [laboratorio] => 
+    [cantidad] => 1
+    [unidad] => 
+    [precio_por_unidad] => 
+    [precio_unitario] => 
+    [usar_precio_venta] => on
+    [forma_pago] => 6
+    [banco] => 
+    [cuenta] => 
+    [monto_efectivo] => 0
+    [monto_otra_forma_pago] => 0
+    [monto_pagado] => 10000
+    [vuelto] => 0.00
+    [productos] => [{"id":"250","laboratorio_id":"1","nombre":"LOSARTAN 50 mg","cantidad":10,"unidad":"10","precio_por_unidad":1000,"precio_venta":"","subtotal":10000,"usar_precio_venta":false,"usar_unidad":true}]
+    [aplicar_impuesto] => 0
+    [dividir_pago] => 0
+)
+
+[09-May-2025 00:27:37 Europe/Berlin] Detalle: venta_id=140, producto_id=250, cantidad=10, unidad='10', precio_unitario=1000, precio_venta=0, usar_unidad=true
+[09-May-2025 00:27:37 Europe/Berlin] Procesando actualización de unidad para producto_id=250, laboratorio_id=1
+[09-May-2025 00:27:37 Europe/Berlin] Datos actuales: unidad_actual=15, unidad_original=15, stock_actual=1
+[09-May-2025 00:27:37 Europe/Berlin] Después de cálculo: nueva_unidad=5, nuevo_stock=1
+[09-May-2025 00:27:37 Europe/Berlin] Actualización exitosa: producto_id=250, laboratorio_id=1, nueva_unidad=5, nuevo_stock=1
+[09-May-2025 00:27:37 Europe/Berlin] Reportes bind_param: type_string=iisddddidsdd, params_count=12, venta_id=140, cliente_id=2, numero_factura=0000015, total=10000, impuesto=0, total_con_impuesto=10000, forma_pago=6, subtotal=10000, banco=, cuenta=NULL, monto_efectivo=0, monto_otra_forma_pago=0
+[09-May-2025 00:28:41 Europe/Berlin] Venta: numero_factura=0000016, subtotal=5000, impuesto=0, total_con_impuesto=5000, cliente_id=3, forma_pago=6, banco=, cuenta=NULL, monto_efectivo=0, monto_otra_forma_pago=0
+[09-May-2025 00:28:41 Europe/Berlin] POST total: 5000, Calculated total_con_impuesto: 5000
+[09-May-2025 00:28:41 Europe/Berlin] POST data: Array
+(
+    [cliente_id] => 3
+    [numero_factura] => 0000016
+    [subtotal] => 5000.00
+    [impuesto] => 8.00
+    [total] => 5000.00
+    [categoria_id] => 35
+    [producto] => 
+    [laboratorio] => 
+    [cantidad] => 1
+    [unidad] => 
+    [precio_por_unidad] => 
+    [precio_unitario] => 
+    [usar_precio_venta] => on
+    [forma_pago] => 6
+    [banco] => 
+    [cuenta] => 
+    [monto_efectivo] => 0
+    [monto_otra_forma_pago] => 0
+    [monto_pagado] => 5000
+    [vuelto] => 0.00
+    [productos] => [{"id":"250","laboratorio_id":"1","nombre":"LOSARTAN 50 mg","cantidad":5,"unidad":"5","precio_por_unidad":1000,"precio_venta":"","subtotal":5000,"usar_precio_venta":false,"usar_unidad":true}]
+    [aplicar_impuesto] => 0
+    [dividir_pago] => 0
+)
+
+[09-May-2025 00:28:41 Europe/Berlin] Detalle: venta_id=141, producto_id=250, cantidad=5, unidad='5', precio_unitario=1000, precio_venta=0, usar_unidad=true
+[09-May-2025 00:28:41 Europe/Berlin] Procesando actualización de unidad para producto_id=250, laboratorio_id=1
+[09-May-2025 00:28:41 Europe/Berlin] Datos actuales: unidad_actual=5, unidad_original=15, stock_actual=1
+[09-May-2025 00:28:41 Europe/Berlin] Después de cálculo: nueva_unidad=15, nuevo_stock=0
+[09-May-2025 00:28:41 Europe/Berlin] Actualización exitosa: producto_id=250, laboratorio_id=1, nueva_unidad=15, nuevo_stock=0
+[09-May-2025 00:28:41 Europe/Berlin] Reportes bind_param: type_string=iisddddidsdd, params_count=12, venta_id=141, cliente_id=3, numero_factura=0000016, total=5000, impuesto=0, total_con_impuesto=5000, forma_pago=6, subtotal=5000, banco=, cuenta=NULL, monto_efectivo=0, monto_otra_forma_pago=0
+[09-May-2025 00:40:06 Europe/Berlin] Advertencia: Precio alto para producto ID 250 (usar_unidad=, precio_por_unidad=, precio_venta=15000): Array
+(
+    [id] => 250
+    [laboratorio_id] => 1
+    [nombre] => LOSARTAN 50 mg
+    [cantidad] => 1
+    [unidad] => 15
+    [precio_por_unidad] => 
+    [precio_venta] => 15000
+    [subtotal] => 15000
+    [usar_precio_venta] => 1
+    [usar_unidad] => 
+)
+
+[09-May-2025 00:40:06 Europe/Berlin] Venta: numero_factura=0000017, subtotal=15000, impuesto=0, total_con_impuesto=15000, cliente_id=3, forma_pago=6, banco=, cuenta=NULL, monto_efectivo=0, monto_otra_forma_pago=0
+[09-May-2025 00:40:06 Europe/Berlin] POST total: 15000, Calculated total_con_impuesto: 15000
+[09-May-2025 00:40:06 Europe/Berlin] POST data: Array
+(
+    [cliente_id] => 3
+    [numero_factura] => 0000017
+    [subtotal] => 15000.00
+    [impuesto] => 8.00
+    [total] => 15000.00
+    [categoria_id] => 35
+    [producto] => 
+    [laboratorio] => 
+    [cantidad] => 1
+    [unidad] => 
+    [precio_por_unidad] => 
+    [precio_unitario] => 
+    [usar_precio_venta] => on
+    [forma_pago] => 6
+    [banco] => 
+    [cuenta] => 
+    [monto_efectivo] => 0
+    [monto_otra_forma_pago] => 0
+    [monto_pagado] => 15000
+    [vuelto] => 0.00
+    [productos] => [{"id":"250","laboratorio_id":"1","nombre":"LOSARTAN 50 mg","cantidad":1,"unidad":"15","precio_por_unidad":"","precio_venta":15000,"subtotal":15000,"usar_precio_venta":true,"usar_unidad":false}]
+    [aplicar_impuesto] => 0
+    [dividir_pago] => 0
+)
+
+[09-May-2025 00:40:06 Europe/Berlin] PHP Warning:  Undefined array key "usWithdrawUnidad" in C:\xampp\htdocs\marci\procesar_venta.php on line 199
+[09-May-2025 00:40:06 Europe/Berlin] Detalle: venta_id=142, producto_id=250, cantidad=1, unidad='15', precio_unitario=0, precio_venta=15000, usar_unidad=false
+[09-May-2025 00:40:06 Europe/Berlin] No se usa unidad, descontando solo stock para producto_id=250, laboratorio_id=1
+[09-May-2025 00:40:06 Europe/Berlin] Reportes bind_param: type_string=iisddddidsdd, params_count=12, venta_id=142, cliente_id=3, numero_factura=0000017, total=15000, impuesto=0, total_con_impuesto=15000, forma_pago=6, subtotal=15000, banco=, cuenta=NULL, monto_efectivo=0, monto_otra_forma_pago=0
+[09-May-2025 00:42:20 Europe/Berlin] Venta: numero_factura=0000018, subtotal=10000, impuesto=0, total_con_impuesto=10000, cliente_id=2, forma_pago=6, banco=, cuenta=NULL, monto_efectivo=0, monto_otra_forma_pago=0
+[09-May-2025 00:42:20 Europe/Berlin] POST total: 10000, Calculated total_con_impuesto: 10000
+[09-May-2025 00:42:20 Europe/Berlin] POST data: Array
+(
+    [cliente_id] => 2
+    [numero_factura] => 0000018
+    [subtotal] => 10000.00
+    [impuesto] => 8.00
+    [total] => 10000.00
+    [categoria_id] => 35
+    [producto] => 
+    [laboratorio] => 
+    [cantidad] => 1
+    [unidad] => 
+    [precio_por_unidad] => 
+    [precio_unitario] => 
+    [usar_precio_venta] => on
+    [forma_pago] => 6
+    [banco] => 
+    [cuenta] => 
+    [monto_efectivo] => 0
+    [monto_otra_forma_pago] => 0
+    [monto_pagado] => 10000
+    [vuelto] => 0.00
+    [productos] => [{"id":"250","laboratorio_id":"1","nombre":"LOSARTAN 50 mg","cantidad":10,"unidad":"10","precio_por_unidad":1000,"precio_venta":"","subtotal":10000,"usar_precio_venta":false,"usar_unidad":true}]
+    [aplicar_impuesto] => 0
+    [dividir_pago] => 0
+)
+
+[09-May-2025 00:42:20 Europe/Berlin] Detalle: venta_id=143, producto_id=250, cantidad=10, unidad='10', precio_unitario=1000, precio_venta=0, usar_unidad=true
+[09-May-2025 00:42:20 Europe/Berlin] Procesando actualización de unidad para producto_id=250, laboratorio_id=1
+[09-May-2025 00:42:20 Europe/Berlin] Datos actuales: unidad_actual=15, unidad_original=15, stock_actual=1
+[09-May-2025 00:42:20 Europe/Berlin] Después de cálculo: nueva_unidad=5, nuevo_stock=1
+[09-May-2025 00:42:20 Europe/Berlin] Actualización exitosa: producto_id=250, laboratorio_id=1, nueva_unidad=5, nuevo_stock=1
+[09-May-2025 00:42:20 Europe/Berlin] Reportes bind_param: type_string=iisddddidsdd, params_count=12, venta_id=143, cliente_id=2, numero_factura=0000018, total=10000, impuesto=0, total_con_impuesto=10000, forma_pago=6, subtotal=10000, banco=, cuenta=NULL, monto_efectivo=0, monto_otra_forma_pago=0
+[09-May-2025 00:43:15 Europe/Berlin] Venta: numero_factura=0000019, subtotal=5000, impuesto=0, total_con_impuesto=5000, cliente_id=2, forma_pago=6, banco=, cuenta=NULL, monto_efectivo=0, monto_otra_forma_pago=0
+[09-May-2025 00:43:15 Europe/Berlin] POST total: 5000, Calculated total_con_impuesto: 5000
+[09-May-2025 00:43:15 Europe/Berlin] POST data: Array
+(
+    [cliente_id] => 2
+    [numero_factura] => 0000019
+    [subtotal] => 5000.00
+    [impuesto] => 8.00
+    [total] => 5000.00
+    [categoria_id] => 35
+    [producto] => 
+    [laboratorio] => 
+    [cantidad] => 1
+    [unidad] => 
+    [precio_por_unidad] => 
+    [precio_unitario] => 
+    [usar_precio_venta] => on
+    [forma_pago] => 6
+    [banco] => 
+    [cuenta] => 
+    [monto_efectivo] => 0
+    [monto_otra_forma_pago] => 0
+    [monto_pagado] => 5000
+    [vuelto] => 0.00
+    [productos] => [{"id":"250","laboratorio_id":"1","nombre":"LOSARTAN 50 mg","cantidad":5,"unidad":"5","precio_por_unidad":1000,"precio_venta":"","subtotal":5000,"usar_precio_venta":false,"usar_unidad":true}]
+    [aplicar_impuesto] => 0
+    [dividir_pago] => 0
+)
+
+[09-May-2025 00:43:15 Europe/Berlin] Detalle: venta_id=144, producto_id=250, cantidad=5, unidad='5', precio_unitario=1000, precio_venta=0, usar_unidad=true
+[09-May-2025 00:43:15 Europe/Berlin] Procesando actualización de unidad para producto_id=250, laboratorio_id=1
+[09-May-2025 00:43:15 Europe/Berlin] Datos actuales: unidad_actual=5, unidad_original=15, stock_actual=1
+[09-May-2025 00:43:15 Europe/Berlin] Después de cálculo: nueva_unidad=15, nuevo_stock=0
+[09-May-2025 00:43:15 Europe/Berlin] Actualización exitosa: producto_id=250, laboratorio_id=1, nueva_unidad=15, nuevo_stock=0
+[09-May-2025 00:43:15 Europe/Berlin] Reportes bind_param: type_string=iisddddidsdd, params_count=12, venta_id=144, cliente_id=2, numero_factura=0000019, total=5000, impuesto=0, total_con_impuesto=5000, forma_pago=6, subtotal=5000, banco=, cuenta=NULL, monto_efectivo=0, monto_otra_forma_pago=0
+[09-May-2025 18:02:25 Europe/Berlin] Venta: numero_factura=0000020, subtotal=10000, impuesto=0, total_con_impuesto=10000, cliente_id=2, forma_pago=6, banco=, cuenta=NULL, monto_efectivo=0, monto_otra_forma_pago=0
+[09-May-2025 18:02:25 Europe/Berlin] POST total: 10000, Calculated total_con_impuesto: 10000
+[09-May-2025 18:02:25 Europe/Berlin] POST data: Array
+(
+    [cliente_id] => 2
+    [codigo_barras] => 
+    [numero_factura] => 0000020
+    [subtotal] => 10000.00
+    [impuesto] => 8.00
+    [total] => 10000.00
+    [categoria_id] => 35
+    [producto] => 
+    [laboratorio] => 
+    [cantidad] => 1
+    [unidad] => 
+    [precio_por_unidad] => 
+    [precio_unitario] => 
+    [usar_precio_venta] => on
+    [forma_pago] => 6
+    [banco] => 
+    [cuenta] => 
+    [monto_efectivo] => 0
+    [monto_otra_forma_pago] => 0
+    [monto_pagado] => 10000
+    [vuelto] => 0.00
+    [productos] => [{"id":"250","laboratorio_id":"1","nombre":"LOSARTAN 50 mg","cantidad":10,"unidad":"10","precio_por_unidad":1000,"precio_venta":"","subtotal":10000,"usar_precio_venta":false,"usar_unidad":true}]
+    [aplicar_impuesto] => 0
+    [dividir_pago] => 0
+)
+
+[09-May-2025 18:02:25 Europe/Berlin] Detalle: venta_id=145, producto_id=250, cantidad=10, unidad='10', precio_unitario=1000, precio_venta=0, usar_unidad=true
+[09-May-2025 18:02:25 Europe/Berlin] Procesando actualización de unidad para producto_id=250, laboratorio_id=1
+[09-May-2025 18:02:25 Europe/Berlin] Datos actuales: unidad_actual=15, unidad_original=15, stock_actual=2
+[09-May-2025 18:02:25 Europe/Berlin] Después de cálculo: nueva_unidad=5, nuevo_stock=2
+[09-May-2025 18:02:25 Europe/Berlin] Actualización exitosa: producto_id=250, laboratorio_id=1, nueva_unidad=5, nuevo_stock=2
+[09-May-2025 18:02:25 Europe/Berlin] Reportes bind_param: type_string=iisddddidsdd, params_count=12, venta_id=145, cliente_id=2, numero_factura=0000020, total=10000, impuesto=0, total_con_impuesto=10000, forma_pago=6, subtotal=10000, banco=, cuenta=NULL, monto_efectivo=0, monto_otra_forma_pago=0
+[09-May-2025 18:06:09 Europe/Berlin] Venta: numero_factura=0000021, subtotal=3000, impuesto=0, total_con_impuesto=3000, cliente_id=3, forma_pago=6, banco=, cuenta=NULL, monto_efectivo=0, monto_otra_forma_pago=0
+[09-May-2025 18:06:09 Europe/Berlin] POST total: 3000, Calculated total_con_impuesto: 3000
+[09-May-2025 18:06:09 Europe/Berlin] POST data: Array
+(
+    [cliente_id] => 3
+    [codigo_barras] => 
+    [numero_factura] => 0000021
+    [subtotal] => 3000.00
+    [impuesto] => 8.00
+    [total] => 3000.00
+    [categoria_id] => 35
+    [producto] => 
+    [laboratorio] => 
+    [cantidad] => 1
+    [unidad] => 
+    [precio_por_unidad] => 
+    [precio_unitario] => 
+    [usar_precio_venta] => on
+    [forma_pago] => 6
+    [banco] => 
+    [cuenta] => 
+    [monto_efectivo] => 0
+    [monto_otra_forma_pago] => 0
+    [monto_pagado] => 3000
+    [vuelto] => 0.00
+    [productos] => [{"id":"250","laboratorio_id":"1","nombre":"LOSARTAN 50 mg","cantidad":3,"unidad":"3","precio_por_unidad":1000,"precio_venta":"","subtotal":3000,"usar_precio_venta":false,"usar_unidad":true}]
+    [aplicar_impuesto] => 0
+    [dividir_pago] => 0
+)
+
+[09-May-2025 18:06:09 Europe/Berlin] Detalle: venta_id=146, producto_id=250, cantidad=3, unidad='3', precio_unitario=1000, precio_venta=0, usar_unidad=true
+[09-May-2025 18:06:09 Europe/Berlin] Procesando actualización de unidad para producto_id=250, laboratorio_id=1
+[09-May-2025 18:06:09 Europe/Berlin] Datos actuales: unidad_actual=5, unidad_original=15, stock_actual=2
+[09-May-2025 18:06:09 Europe/Berlin] Después de cálculo: nueva_unidad=2, nuevo_stock=2
+[09-May-2025 18:06:09 Europe/Berlin] Actualización exitosa: producto_id=250, laboratorio_id=1, nueva_unidad=2, nuevo_stock=2
+[09-May-2025 18:06:09 Europe/Berlin] Reportes bind_param: type_string=iisddddidsdd, params_count=12, venta_id=146, cliente_id=3, numero_factura=0000021, total=3000, impuesto=0, total_con_impuesto=3000, forma_pago=6, subtotal=3000, banco=, cuenta=NULL, monto_efectivo=0, monto_otra_forma_pago=0
+[09-May-2025 18:09:05 Europe/Berlin] Error: Precio sospechosamente alto para producto ID 251 (usar_unidad=, precio_por_unidad=, precio_venta=20000): Array
+(
+    [id] => 251
+    [laboratorio_id] => 2
+    [nombre] => LORATADINA 30 mg
+    [cantidad] => 1
+    [unidad] => 10
+    [precio_por_unidad] => 
+    [precio_venta] => 20000
+    [subtotal] => 20000
+    [usar_precio_venta] => 1
+    [usar_unidad] => 
+)
+
+[09-May-2025 18:10:57 Europe/Berlin] Error: Precio sospechosamente alto para producto ID 251 (usar_unidad=, precio_por_unidad=, precio_venta=20000): Array
+(
+    [id] => 251
+    [laboratorio_id] => 2
+    [nombre] => LORATADINA 30 mg
+    [cantidad] => 1
+    [unidad] => 10
+    [precio_por_unidad] => 
+    [precio_venta] => 20000
+    [subtotal] => 20000
+    [usar_precio_venta] => 1
+    [usar_unidad] => 
+)
+
+[09-May-2025 18:11:19 Europe/Berlin] Error: Precio sospechosamente alto para producto ID 251 (usar_unidad=, precio_por_unidad=, precio_venta=20000): Array
+(
+    [id] => 251
+    [laboratorio_id] => 2
+    [nombre] => LORATADINA 30 mg
+    [cantidad] => 1
+    [unidad] => 10
+    [precio_por_unidad] => 
+    [precio_venta] => 20000
+    [subtotal] => 20000
+    [usar_precio_venta] => 1
+    [usar_unidad] => 
+)
+
+[09-May-2025 18:12:31 Europe/Berlin] Error: Precio sospechosamente alto para producto ID 251 (usar_unidad=, precio_por_unidad=, precio_venta=20000): Array
+(
+    [id] => 251
+    [laboratorio_id] => 2
+    [nombre] => LORATADINA 30 mg
+    [cantidad] => 1
+    [unidad] => 10
+    [precio_por_unidad] => 
+    [precio_venta] => 20000
+    [subtotal] => 20000
+    [usar_precio_venta] => 1
+    [usar_unidad] => 
+)
+
+[09-May-2025 18:19:48 Europe/Berlin] Error: Precio sospechosamente alto para producto ID 251 (usar_unidad=, precio_por_unidad=, precio_venta=20000): Array
+(
+    [id] => 251
+    [laboratorio_id] => 2
+    [nombre] => LORATADINA 30 mg
+    [cantidad] => 1
+    [unidad] => 10
+    [precio_por_unidad] => 
+    [precio_venta] => 20000
+    [subtotal] => 20000
+    [usar_precio_venta] => 1
+    [usar_unidad] => 
+)
+
+[09-May-2025 18:21:54 Europe/Berlin] Error: Precio sospechosamente alto para producto ID 251 (usar_unidad=, precio_por_unidad=, precio_venta=20000): Array
+(
+    [id] => 251
+    [laboratorio_id] => 2
+    [nombre] => LORATADINA 30 mg
+    [cantidad] => 1
+    [unidad] => 10
+    [precio_por_unidad] => 
+    [precio_venta] => 20000
+    [subtotal] => 20000
+    [usar_precio_venta] => 1
+    [usar_unidad] => 
+)
+
+[09-May-2025 18:30:50 Europe/Berlin] Advertencia: Precio alto para producto ID 251 (usar_unidad=, precio_por_unidad=, precio_venta=20000): Array
+(
+    [id] => 251
+    [laboratorio_id] => 2
+    [nombre] => LORATADINA 30 mg
+    [cantidad] => 1
+    [unidad] => 10
+    [precio_por_unidad] => 
+    [precio_venta] => 20000
+    [subtotal] => 20000
+    [usar_precio_venta] => 1
+    [usar_unidad] => 
+)
+
+[09-May-2025 18:30:50 Europe/Berlin] Venta: numero_factura=0000022, subtotal=20000, impuesto=0, total_con_impuesto=20000, cliente_id=2, forma_pago=7, banco=, cuenta=NULL, monto_efectivo=10000, monto_otra_forma_pago=10000
+[09-May-2025 18:30:50 Europe/Berlin] POST total: 20000, Calculated total_con_impuesto: 20000
+[09-May-2025 18:30:50 Europe/Berlin] POST data: Array
+(
+    [cliente_id] => 2
+    [codigo_barras] => 
+    [numero_factura] => 0000022
+    [subtotal] => 20000.00
+    [impuesto] => 8.00
+    [total] => 20000.00
+    [categoria_id] => 35
+    [producto] => 
+    [laboratorio] => 
+    [cantidad] => 1
+    [unidad] => 
+    [precio_por_unidad] => 
+    [precio_unitario] => 
+    [usar_precio_venta] => on
+    [forma_pago] => 7
+    [banco] => 
+    [cuenta] => 
+    [dividir_pago] => 1
+    [monto_efectivo] => 10000
+    [monto_otra_forma_pago] => 10000
+    [monto_pagado] => 20000
+    [vuelto] => 0.00
+    [productos] => [{"id":"251","laboratorio_id":"2","nombre":"LORATADINA 30 mg","cantidad":1,"unidad":"10","precio_por_unidad":"","precio_venta":20000,"subtotal":20000,"usar_precio_venta":true,"usar_unidad":false}]
+    [aplicar_impuesto] => 0
+)
+
+[09-May-2025 18:30:50 Europe/Berlin] PHP Warning:  Undefined array key "usWithdrawUnidad" in C:\xampp\htdocs\marci\procesar_venta.php on line 194
+[09-May-2025 18:30:50 Europe/Berlin] Detalle: venta_id=147, producto_id=251, cantidad=1, unidad='10', precio_unitario=0, precio_venta=20000, usar_unidad=false
+[09-May-2025 18:30:50 Europe/Berlin] No se usa unidad, descontando solo stock para producto_id=251, laboratorio_id=2
+[09-May-2025 18:30:50 Europe/Berlin] Reportes bind_param: type_string=iisddddidsdd, params_count=12, venta_id=147, cliente_id=2, numero_factura=0000022, total=20000, impuesto=0, total_con_impuesto=20000, forma_pago=7, subtotal=20000, banco=, cuenta=NULL, monto_efectivo=10000, monto_otra_forma_pago=10000
+[10-May-2025 16:44:08 Europe/Berlin] Venta: numero_factura=0000023, subtotal=10000, impuesto=0, total_con_impuesto=10000, cliente_id=3, forma_pago=6, banco=, cuenta=NULL, monto_efectivo=0, monto_otra_forma_pago=0
+[10-May-2025 16:44:08 Europe/Berlin] POST total: 10000, Calculated total_con_impuesto: 10000
+[10-May-2025 16:44:08 Europe/Berlin] POST data: Array
+(
+    [cliente_id] => 3
+    [codigo_barras] => 
+    [numero_factura] => 0000023
+    [subtotal] => 10000.00
+    [impuesto] => 8.00
+    [total] => 10000.00
+    [categoria_id] => 35
+    [producto] => 
+    [laboratorio] => 
+    [cantidad] => 1
+    [unidad] => 
+    [precio_por_unidad] => 
+    [precio_unitario] => 
+    [usar_precio_venta] => on
+    [forma_pago] => 6
+    [banco] => 
+    [cuenta] => 
+    [monto_efectivo] => 0
+    [monto_otra_forma_pago] => 0
+    [monto_pagado] => 10000
+    [vuelto] => 0.00
+    [productos] => [{"id":"251","laboratorio_id":"2","nombre":"LORATADINA 30 mg","cantidad":5,"unidad":"5","precio_por_unidad":2000,"precio_venta":"","subtotal":10000,"usar_precio_venta":false,"usar_unidad":true}]
+    [aplicar_impuesto] => 0
+    [dividir_pago] => 0
+)
+
+[10-May-2025 16:44:08 Europe/Berlin] Detalle: venta_id=148, producto_id=251, cantidad=5, unidad='5', precio_unitario=2000, precio_venta=0, usar_unidad=true
+[10-May-2025 16:44:08 Europe/Berlin] Procesando actualización de unidad para producto_id=251, laboratorio_id=2
+[10-May-2025 16:44:08 Europe/Berlin] Datos actuales: unidad_actual=10, unidad_original=10, stock_actual=1
+[10-May-2025 16:44:08 Europe/Berlin] Después de cálculo: nueva_unidad=5, nuevo_stock=1
+[10-May-2025 16:44:08 Europe/Berlin] Actualización exitosa: producto_id=251, laboratorio_id=2, nueva_unidad=5, nuevo_stock=1
+[10-May-2025 16:44:08 Europe/Berlin] Reportes bind_param: type_string=iisddddidsdd, params_count=12, venta_id=148, cliente_id=3, numero_factura=0000023, total=10000, impuesto=0, total_con_impuesto=10000, forma_pago=6, subtotal=10000, banco=, cuenta=NULL, monto_efectivo=0, monto_otra_forma_pago=0
+[10-May-2025 18:46:20 Europe/Berlin] Venta: numero_factura=0000024, subtotal=6000, impuesto=0, total_con_impuesto=6000, cliente_id=2, forma_pago=6, banco=, cuenta=NULL, monto_efectivo=0, monto_otra_forma_pago=0
+[10-May-2025 18:46:20 Europe/Berlin] POST total: 6000, Calculated total_con_impuesto: 6000
+[10-May-2025 18:46:20 Europe/Berlin] POST data: Array
+(
+    [cliente_id] => 2
+    [codigo_barras] => 
+    [numero_factura] => 0000024
+    [subtotal] => 6000.00
+    [impuesto] => 8.00
+    [total] => 6000.00
+    [categoria_id] => 35
+    [producto] => 
+    [laboratorio] => 
+    [cantidad] => 1
+    [unidad] => 
+    [precio_por_unidad] => 
+    [precio_unitario] => 
+    [usar_precio_venta] => on
+    [forma_pago] => 6
+    [banco] => 
+    [cuenta] => 
+    [monto_efectivo] => 0
+    [monto_otra_forma_pago] => 0
+    [monto_pagado] => 6000
+    [vuelto] => 0.00
+    [productos] => [{"id":"251","laboratorio_id":"2","nombre":"LORATADINA 30 mg","cantidad":3,"unidad":"3","precio_por_unidad":2000,"precio_venta":"","subtotal":6000,"usar_precio_venta":false,"usar_unidad":true}]
+    [aplicar_impuesto] => 0
+    [dividir_pago] => 0
+)
+
+[10-May-2025 18:46:20 Europe/Berlin] Detalle: venta_id=149, producto_id=251, cantidad=3, unidad='3', precio_unitario=2000, precio_venta=0, usar_unidad=true
+[10-May-2025 18:46:20 Europe/Berlin] Procesando actualización de unidad para producto_id=251, laboratorio_id=2
+[10-May-2025 18:46:20 Europe/Berlin] Datos actuales: unidad_actual=5, unidad_original=10, stock_actual=1
+[10-May-2025 18:46:20 Europe/Berlin] Después de cálculo: nueva_unidad=2, nuevo_stock=1
+[10-May-2025 18:46:20 Europe/Berlin] Actualización exitosa: producto_id=251, laboratorio_id=2, nueva_unidad=2, nuevo_stock=1
+[10-May-2025 18:46:20 Europe/Berlin] Reportes bind_param: type_string=iisddddidsdd, params_count=12, venta_id=149, cliente_id=2, numero_factura=0000024, total=6000, impuesto=0, total_con_impuesto=6000, forma_pago=6, subtotal=6000, banco=, cuenta=NULL, monto_efectivo=0, monto_otra_forma_pago=0
+[10-May-2025 20:01:09 Europe/Berlin] Venta: numero_factura=0000025, subtotal=4000, impuesto=0, total_con_impuesto=4000, cliente_id=2, forma_pago=6, banco=, cuenta=NULL, monto_efectivo=0, monto_otra_forma_pago=0
+[10-May-2025 20:01:09 Europe/Berlin] POST total: 4000, Calculated total_con_impuesto: 4000
+[10-May-2025 20:01:09 Europe/Berlin] POST data: Array
+(
+    [cliente_id] => 2
+    [codigo_barras] => 
+    [numero_factura] => 0000025
+    [subtotal] => 4000.00
+    [impuesto] => 8.00
+    [total] => 4000.00
+    [categoria_id] => 35
+    [producto] => 
+    [laboratorio] => 
+    [cantidad] => 1
+    [unidad] => 
+    [precio_por_unidad] => 
+    [precio_unitario] => 
+    [usar_precio_venta] => on
+    [forma_pago] => 6
+    [banco] => 
+    [cuenta] => 
+    [monto_efectivo] => 0
+    [monto_otra_forma_pago] => 0
+    [monto_pagado] => 4000
+    [vuelto] => 0.00
+    [productos] => [{"id":"251","laboratorio_id":"2","nombre":"LORATADINA 30 mg","cantidad":2,"unidad":"2","precio_por_unidad":2000,"precio_venta":"","subtotal":4000,"usar_precio_venta":false,"usar_unidad":true}]
+    [aplicar_impuesto] => 0
+    [dividir_pago] => 0
+)
+
+[10-May-2025 20:01:09 Europe/Berlin] Detalle: venta_id=150, producto_id=251, cantidad=2, unidad='2', precio_unitario=2000, precio_venta=0, usar_unidad=true
+[10-May-2025 20:01:09 Europe/Berlin] Procesando actualización de unidad para producto_id=251, laboratorio_id=2
+[10-May-2025 20:01:09 Europe/Berlin] Datos actuales: unidad_actual=2, unidad_original=10, stock_actual=1
+[10-May-2025 20:01:09 Europe/Berlin] Después de cálculo: nueva_unidad=10, nuevo_stock=0
+[10-May-2025 20:01:09 Europe/Berlin] Actualización exitosa: producto_id=251, laboratorio_id=2, nueva_unidad=10, nuevo_stock=0
+[10-May-2025 20:01:09 Europe/Berlin] Reportes bind_param: type_string=iisddddidsdd, params_count=12, venta_id=150, cliente_id=2, numero_factura=0000025, total=4000, impuesto=0, total_con_impuesto=4000, forma_pago=6, subtotal=4000, banco=, cuenta=NULL, monto_efectivo=0, monto_otra_forma_pago=0
+[10-May-2025 21:29:13 Europe/Berlin] Venta: numero_factura=0000026, subtotal=10000, impuesto=0, total_con_impuesto=10000, cliente_id=2, forma_pago=6, banco=, cuenta=NULL, monto_efectivo=0, monto_otra_forma_pago=0
+[10-May-2025 21:29:13 Europe/Berlin] POST total: 10000, Calculated total_con_impuesto: 10000
+[10-May-2025 21:29:13 Europe/Berlin] POST data: Array
+(
+    [cliente_id] => 2
+    [codigo_barras] => 
+    [numero_factura] => 0000026
+    [subtotal] => 10000.00
+    [impuesto] => 8.00
+    [total] => 10000.00
+    [categoria_id] => 35
+    [producto] => 
+    [laboratorio] => 
+    [cantidad] => 1
+    [unidad] => 
+    [precio_por_unidad] => 
+    [precio_unitario] => 
+    [usar_precio_venta] => on
+    [forma_pago] => 6
+    [banco] => 
+    [cuenta] => 
+    [monto_efectivo] => 0
+    [monto_otra_forma_pago] => 0
+    [monto_pagado] => 10000
+    [vuelto] => 0.00
+    [productos] => [{"id":"250","laboratorio_id":"1","nombre":"LOSARTAN 50 mg","cantidad":10,"unidad":"10","precio_por_unidad":1000,"precio_venta":"","subtotal":10000,"usar_precio_venta":false,"usar_unidad":true}]
+    [aplicar_impuesto] => 0
+    [dividir_pago] => 0
+)
+
+[10-May-2025 21:29:13 Europe/Berlin] Detalle: venta_id=151, producto_id=250, cantidad=10, unidad='10', precio_unitario=1000, precio_venta=0, usar_unidad=true
+[10-May-2025 21:29:13 Europe/Berlin] Procesando actualización de unidad para producto_id=250, laboratorio_id=1
+[10-May-2025 21:29:13 Europe/Berlin] Datos actuales: unidad_actual=15, unidad_original=15, stock_actual=2
+[10-May-2025 21:29:13 Europe/Berlin] Después de cálculo: nueva_unidad=5, nuevo_stock=2
+[10-May-2025 21:29:13 Europe/Berlin] Actualización exitosa: producto_id=250, laboratorio_id=1, nueva_unidad=5, nuevo_stock=2
+[10-May-2025 21:29:13 Europe/Berlin] Reportes bind_param: type_string=iisddddidsdd, params_count=12, venta_id=151, cliente_id=2, numero_factura=0000026, total=10000, impuesto=0, total_con_impuesto=10000, forma_pago=6, subtotal=10000, banco=, cuenta=NULL, monto_efectivo=0, monto_otra_forma_pago=0
+[10-May-2025 21:32:21 Europe/Berlin] Venta: numero_factura=0000027, subtotal=5000, impuesto=0, total_con_impuesto=5000, cliente_id=3, forma_pago=6, banco=, cuenta=NULL, monto_efectivo=0, monto_otra_forma_pago=0
+[10-May-2025 21:32:21 Europe/Berlin] POST total: 5000, Calculated total_con_impuesto: 5000
+[10-May-2025 21:32:21 Europe/Berlin] POST data: Array
+(
+    [cliente_id] => 3
+    [codigo_barras] => 
+    [numero_factura] => 0000027
+    [subtotal] => 5000.00
+    [impuesto] => 8.00
+    [total] => 5000.00
+    [categoria_id] => 35
+    [producto] => 
+    [laboratorio] => 
+    [cantidad] => 1
+    [unidad] => 
+    [precio_por_unidad] => 
+    [precio_unitario] => 
+    [usar_precio_venta] => on
+    [forma_pago] => 6
+    [banco] => 
+    [cuenta] => 
+    [monto_efectivo] => 0
+    [monto_otra_forma_pago] => 0
+    [monto_pagado] => 5000
+    [vuelto] => 0.00
+    [productos] => [{"id":"250","laboratorio_id":"1","nombre":"LOSARTAN 50 mg","cantidad":5,"unidad":"5","precio_por_unidad":1000,"precio_venta":"","subtotal":5000,"usar_precio_venta":false,"usar_unidad":true}]
+    [aplicar_impuesto] => 0
+    [dividir_pago] => 0
+)
+
+[10-May-2025 21:32:21 Europe/Berlin] Detalle: venta_id=152, producto_id=250, cantidad=5, unidad='5', precio_unitario=1000, precio_venta=0, usar_unidad=true
+[10-May-2025 21:32:21 Europe/Berlin] Procesando actualización de unidad para producto_id=250, laboratorio_id=1
+[10-May-2025 21:32:21 Europe/Berlin] Datos actuales: unidad_actual=5, unidad_original=15, stock_actual=2
+[10-May-2025 21:32:21 Europe/Berlin] Después de cálculo: nueva_unidad=15, nuevo_stock=1
+[10-May-2025 21:32:21 Europe/Berlin] Actualización exitosa: producto_id=250, laboratorio_id=1, nueva_unidad=15, nuevo_stock=1
+[10-May-2025 21:32:21 Europe/Berlin] Reportes bind_param: type_string=iisddddidsdd, params_count=12, venta_id=152, cliente_id=3, numero_factura=0000027, total=5000, impuesto=0, total_con_impuesto=5000, forma_pago=6, subtotal=5000, banco=, cuenta=NULL, monto_efectivo=0, monto_otra_forma_pago=0
+[10-May-2025 21:34:45 Europe/Berlin] Venta: numero_factura=0000028, subtotal=15000, impuesto=0, total_con_impuesto=15000, cliente_id=2, forma_pago=6, banco=, cuenta=NULL, monto_efectivo=0, monto_otra_forma_pago=0
+[10-May-2025 21:34:45 Europe/Berlin] POST total: 15000, Calculated total_con_impuesto: 15000
+[10-May-2025 21:34:45 Europe/Berlin] POST data: Array
+(
+    [cliente_id] => 2
+    [codigo_barras] => 
+    [numero_factura] => 0000028
+    [subtotal] => 15000.00
+    [impuesto] => 8.00
+    [total] => 15000.00
+    [categoria_id] => 35
+    [producto] => 
+    [laboratorio] => 
+    [cantidad] => 1
+    [unidad] => 
+    [precio_por_unidad] => 
+    [precio_unitario] => 
+    [usar_precio_venta] => on
+    [forma_pago] => 6
+    [banco] => 
+    [cuenta] => 
+    [monto_efectivo] => 0
+    [monto_otra_forma_pago] => 0
+    [monto_pagado] => 15000
+    [vuelto] => 0.00
+    [productos] => [{"id":"250","laboratorio_id":"1","nombre":"LOSARTAN 50 mg","cantidad":1,"unidad":"15","precio_por_unidad":"","precio_venta":15000,"subtotal":15000,"usar_precio_venta":true,"usar_unidad":false}]
+    [aplicar_impuesto] => 0
+    [dividir_pago] => 0
+)
+
+[10-May-2025 21:34:45 Europe/Berlin] PHP Warning:  Undefined array key "usWithdrawUnidad" in C:\xampp\htdocs\marci\procesar_venta.php on line 194
+[10-May-2025 21:34:45 Europe/Berlin] Detalle: venta_id=153, producto_id=250, cantidad=1, unidad='15', precio_unitario=0, precio_venta=15000, usar_unidad=false
+[10-May-2025 21:34:45 Europe/Berlin] No se usa unidad, descontando solo stock para producto_id=250, laboratorio_id=1
+[10-May-2025 21:34:45 Europe/Berlin] Reportes bind_param: type_string=iisddddidsdd, params_count=12, venta_id=153, cliente_id=2, numero_factura=0000028, total=15000, impuesto=0, total_con_impuesto=15000, forma_pago=6, subtotal=15000, banco=, cuenta=NULL, monto_efectivo=0, monto_otra_forma_pago=0
+[10-May-2025 22:16:28 Europe/Berlin] Venta: numero_factura=0000029, subtotal=10000, impuesto=0, total_con_impuesto=10000, cliente_id=3, forma_pago=6, banco=, cuenta=NULL, monto_efectivo=0, monto_otra_forma_pago=0
+[10-May-2025 22:16:28 Europe/Berlin] POST total: 10000, Calculated total_con_impuesto: 10000
+[10-May-2025 22:16:28 Europe/Berlin] POST data: Array
+(
+    [cliente_id] => 3
+    [codigo_barras] => 
+    [numero_factura] => 0000029
+    [subtotal] => 10000.00
+    [impuesto] => 8.00
+    [total] => 10000.00
+    [categoria_id] => 35
+    [producto] => 
+    [laboratorio] => 
+    [cantidad] => 1
+    [unidad] => 
+    [precio_por_unidad] => 
+    [precio_unitario] => 
+    [usar_precio_venta] => on
+    [forma_pago] => 6
+    [banco] => 
+    [cuenta] => 
+    [monto_efectivo] => 0
+    [monto_otra_forma_pago] => 0
+    [monto_pagado] => 10000
+    [vuelto] => 0.00
+    [productos] => [{"id":"250","laboratorio_id":"1","nombre":"LOSARTAN 50 mg","cantidad":10,"unidad":"10","precio_por_unidad":1000,"precio_venta":"","subtotal":10000,"usar_precio_venta":false,"usar_unidad":true}]
+    [aplicar_impuesto] => 0
+    [dividir_pago] => 0
+)
+
+[10-May-2025 22:16:28 Europe/Berlin] Detalle: venta_id=154, producto_id=250, cantidad=10, unidad='10', precio_unitario=1000, precio_venta=0, usar_unidad=true
+[10-May-2025 22:16:28 Europe/Berlin] Procesando actualización de unidad para producto_id=250, laboratorio_id=1
+[10-May-2025 22:16:28 Europe/Berlin] Datos actuales: unidad_actual=15, unidad_original=15, stock_actual=2
+[10-May-2025 22:16:28 Europe/Berlin] Después de cálculo: nueva_unidad=5, nuevo_stock=2
+[10-May-2025 22:16:28 Europe/Berlin] Actualización exitosa: producto_id=250, laboratorio_id=1, nueva_unidad=5, nuevo_stock=2
+[10-May-2025 22:16:28 Europe/Berlin] Reportes bind_param: type_string=iisddddidsdd, params_count=12, venta_id=154, cliente_id=3, numero_factura=0000029, total=10000, impuesto=0, total_con_impuesto=10000, forma_pago=6, subtotal=10000, banco=, cuenta=NULL, monto_efectivo=0, monto_otra_forma_pago=0
+[10-May-2025 22:59:30 Europe/Berlin] Venta: numero_factura=0000030, subtotal=3000, impuesto=0, total_con_impuesto=3000, cliente_id=2, forma_pago=6, banco=, cuenta=NULL, monto_efectivo=0, monto_otra_forma_pago=0
+[10-May-2025 22:59:30 Europe/Berlin] POST total: 3000, Calculated total_con_impuesto: 3000
+[10-May-2025 22:59:30 Europe/Berlin] POST data: Array
+(
+    [cliente_id] => 2
+    [codigo_barras] => 
+    [numero_factura] => 0000030
+    [subtotal] => 3000.00
+    [impuesto] => 8.00
+    [total] => 3000.00
+    [categoria_id] => 35
+    [producto] => 
+    [laboratorio] => 
+    [cantidad] => 1
+    [unidad] => 
+    [precio_por_unidad] => 
+    [precio_unitario] => 
+    [usar_precio_venta] => on
+    [forma_pago] => 6
+    [banco] => 
+    [cuenta] => 
+    [monto_efectivo] => 0
+    [monto_otra_forma_pago] => 0
+    [monto_pagado] => 3000
+    [vuelto] => 0.00
+    [productos] => [{"id":"250","laboratorio_id":"1","nombre":"LOSARTAN 50 mg","cantidad":3,"unidad":"3","precio_por_unidad":1000,"precio_venta":"","subtotal":3000,"usar_precio_venta":false,"usar_unidad":true}]
+    [aplicar_impuesto] => 0
+    [dividir_pago] => 0
+)
+
+[10-May-2025 22:59:30 Europe/Berlin] Detalle: venta_id=155, producto_id=250, cantidad=3, unidad='3', precio_unitario=1000, precio_venta=0, usar_unidad=true
+[10-May-2025 22:59:30 Europe/Berlin] Procesando actualización de unidad para producto_id=250, laboratorio_id=1
+[10-May-2025 22:59:30 Europe/Berlin] Datos actuales: unidad_actual=5, unidad_original=15, stock_actual=2
+[10-May-2025 22:59:30 Europe/Berlin] Después de cálculo: nueva_unidad=2, nuevo_stock=2
+[10-May-2025 22:59:30 Europe/Berlin] Actualización exitosa: producto_id=250, laboratorio_id=1, nueva_unidad=2, nuevo_stock=2
+[10-May-2025 22:59:30 Europe/Berlin] Reportes bind_param: type_string=iisddddidsdd, params_count=12, venta_id=155, cliente_id=2, numero_factura=0000030, total=3000, impuesto=0, total_con_impuesto=3000, forma_pago=6, subtotal=3000, banco=, cuenta=NULL, monto_efectivo=0, monto_otra_forma_pago=0
+[10-May-2025 23:03:50 Europe/Berlin] Advertencia: Precio alto para producto ID 251 (usar_unidad=, precio_por_unidad=, precio_venta=20000): Array
+(
+    [id] => 251
+    [laboratorio_id] => 2
+    [nombre] => LORATADINA 30 mg
+    [cantidad] => 1
+    [unidad] => 15
+    [precio_por_unidad] => 
+    [precio_venta] => 20000
+    [subtotal] => 20000
+    [usar_precio_venta] => 1
+    [usar_unidad] => 
+)
+
+[10-May-2025 23:03:50 Europe/Berlin] Venta: numero_factura=0000031, subtotal=20000, impuesto=1600, total_con_impuesto=21600, cliente_id=2, forma_pago=6, banco=, cuenta=NULL, monto_efectivo=0, monto_otra_forma_pago=0
+[10-May-2025 23:03:50 Europe/Berlin] POST total: 21600, Calculated total_con_impuesto: 21600
+[10-May-2025 23:03:50 Europe/Berlin] POST data: Array
+(
+    [cliente_id] => 2
+    [codigo_barras] => 
+    [numero_factura] => 0000031
+    [subtotal] => 20000.00
+    [impuesto] => 8.00
+    [total] => 21600.00
+    [categoria_id] => 35
+    [producto] => 
+    [laboratorio] => 
+    [cantidad] => 1
+    [unidad] => 
+    [precio_por_unidad] => 
+    [precio_unitario] => 
+    [usar_precio_venta] => on
+    [forma_pago] => 6
+    [banco] => 
+    [cuenta] => 
+    [monto_efectivo] => 0
+    [monto_otra_forma_pago] => 0
+    [monto_pagado] => 21600
+    [vuelto] => 0.00
+    [aplicar_impuesto] => 1
+    [productos] => [{"id":"251","laboratorio_id":"2","nombre":"LORATADINA 30 mg","cantidad":1,"unidad":"15","precio_por_unidad":"","precio_venta":20000,"subtotal":20000,"usar_precio_venta":true,"usar_unidad":false}]
+    [dividir_pago] => 0
+)
+
+[10-May-2025 23:03:50 Europe/Berlin] PHP Warning:  Undefined array key "usWithdrawUnidad" in C:\xampp\htdocs\marci\procesar_venta.php on line 194
+[10-May-2025 23:03:50 Europe/Berlin] Detalle: venta_id=156, producto_id=251, cantidad=1, unidad='15', precio_unitario=0, precio_venta=20000, usar_unidad=false
+[10-May-2025 23:03:50 Europe/Berlin] No se usa unidad, descontando solo stock para producto_id=251, laboratorio_id=2
+[10-May-2025 23:03:50 Europe/Berlin] Reportes bind_param: type_string=iisddddidsdd, params_count=12, venta_id=156, cliente_id=2, numero_factura=0000031, total=21600, impuesto=1600, total_con_impuesto=21600, forma_pago=6, subtotal=20000, banco=, cuenta=NULL, monto_efectivo=0, monto_otra_forma_pago=0
